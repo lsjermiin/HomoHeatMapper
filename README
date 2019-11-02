@@ -34,7 +34,7 @@ FORMAT      Probabilities must be saved in a text file with comma-separated valu
  
 EXAMPLE     See file labelled 22_root_Pvalues.csv.
 
-INSTALL     Copy HomoHeatMapper.pl to /usr/local/bin/ for easy use. Use this command:
+INSTALL     To install HomoHeatMapper.pl, type (in the command line):
 
             sudo cp HomoHeatMapper.pl /usr/local/bin/. 
 
