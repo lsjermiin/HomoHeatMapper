@@ -19,8 +19,8 @@ CONTACT     b.misof@leibniz-zfmk.de
 
 DATE        2 November 2019
 
-PURPOSE     HomoHeatMapper is designed to produce a heat map from a distance matrix with
-            probabilities obtain from Homo v2.0 (https://github.com/lsjermiin/Homo.v2.0).
+PURPOSE     HomoHeatMapper produces a heat map from a distance matrix with probabilities 
+            obtained using Homo v2.0 (https://github.com/lsjermiin/Homo.v2.0).
             
             The smaller a probability is, the darker the corresponding pixel in the heat 
             map is.
@@ -38,10 +38,14 @@ INSTALL     Copy HomoHeatMapper.pl to /usr/local/bin/ for easy use. Use this com
 
             sudo cp HomoHeatMapper.pl /usr/local/bin/. 
 
-EXECUTE     HomoHeatMapper -i <infile.csv> <-t/-f>
+EXECUTE     HomoHeatMapper -i <infile.csv> <-t|f>
 
 HELP        -t = triangular heat map; -f = square heat map
 
 STATUS      Software complete
 
 NOTE        Contact author for updates, etc
+
+REFERENCE   Jermiin LS, Lovell DR, Misof B, Foster PG, Robinson J. Software for detecting 
+            heterogeneous evolutionary processes across aligned sequence data. Syst. Biol.
+            (submitted)
