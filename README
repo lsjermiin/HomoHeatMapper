@@ -1,0 +1,47 @@
+NOTES REGARDING SOFTWARE
+
+NAME        HomoHeatMapper
+
+VERSION     1.0
+
+COPYRIGHT   Copyright © 2019 Bernhard Misof. All rights reserved.
+
+WARNING     The copyright holder takes no legal responsibility for the correctness of 
+            results obtained using this program.
+
+AUTHOR      Bernhard Misof
+
+ADDRESS     Center for Molecular Biodiversity Research
+            Zoological Research Museum A. Koenig
+            Bonn, Germany
+
+CONTACT     b.misof@leibniz-zfmk.de
+
+DATE        2 November 2019
+
+PURPOSE     HomoHeatMapper is designed to produce a heat map from a distance matrix with
+            probabilities obtain from Homo v2.0 (https://github.com/lsjermiin/Homo.v2.0).
+            
+            The smaller a probability is, the darker the corresponding pixel in the heat 
+            map is.
+ 
+FORMAT      Probabilities must be saved in a text file with comma-separated values (.csv).
+
+            The first line must contain the number of samples being compared. 
+
+            Each of the following lines must start with a sample name, and then followed
+            by the probabilities, one for each comparison involving the named sample.
+ 
+EXAMPLE     See file labelled 22_root_Pvalues.csv.
+
+INSTALL     Copy HomoHeatMapper.pl to /usr/local/bin/ for easy use. Use this command:
+
+            sudo cp HomoHeatMapper.pl /usr/local/bin/. 
+
+EXECUTE     HomoHeatMapper -i <infile.csv> <-t/-f>
+
+HELP        -t = triangular heat map; -f = square heat map
+
+STATUS      Software complete
+
+NOTE        Contact author for updates, etc
